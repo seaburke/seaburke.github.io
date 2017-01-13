@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+          <!-- Load the required client component. -->
+
+      <!-- Load additional components when required. -->
+
+      <!-- Use the components. We'll see usage instructions next. -->
+  </head>
+  <body>
+
+    <div id="form-container">
+  
+    <form action="" method="post">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" id="firstName" placeholder="First Name">
+
+      <br>
+
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+
+      <br>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email">
+
+      <br>
+      
+      <label for="streetAddress">Street Address</label>
+      <input type="text" name="Street Address" id="streetAddress" placeholder="Street Address">
+
+      <br>
+
+      <label for="city">City</label>
+      <input type="text" name="city" id="city" placeholder="City">
+
+      <br>
+
+      <label for="Zip">Zip/Postal Code</label>
+      <input type="text" name="zip" id="zip" placeholder="Zip/Postal Code">
+
+      <br>
+
+      <label for="countryDropdown">Country</label>
+      <select>
+        <option value="US">United States</option>
+        <option value="GB">United Kingdom</option>
+        <option value="CA">Canada</option>
+      </select>
+    </div>
+
+  <!--   <input type="submit" value="Submit Form"> -->
+
+    <script src="https://js.braintreegateway.com/web/3.6.3/js/client.min.js"></script>
+    <script src="https://js.braintreegateway.com/web/3.6.3/js/paypal.min.js"></script>
+    <script src="braintree.js" type="text/javascript"></script>
+
+    <script src="https://www.paypalobjects.com/api/button.js?"
+     data-merchant="braintree"
+     data-id="paypal-button"
+     data-button="checkout"
+     data-color="gold"
+     data-size="medium"
+     data-shape="pill"
+     data-button_type="submit"
+     data-button_disabled="false"
+ ></script>
+
+
+  </body>
+</html>
